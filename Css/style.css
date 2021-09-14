@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    min-height: 110vh;
+}
+/* Styling of header  */
+
+header{
+    z-index:1000;
+    position:fixed;
+    background: black;
+    width:100%;
+    padding:15px 150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: cener;
+}
+.header-text {
+    color: #ffffff;
+    display: inline; 
+    font-style: italic; 
+    font-weight: lighter;
+    padding-left: 15px;
+}
+header .name{
+    color:cornsilk;
+    font-size:30px;
+    font-weight:bold;
+    text-decoration: none; 
+}
+
+/* styling of nav bar  */
+
+nav{
+    position:relative;
+}
+nav a{
+    color:cornsilk;
+    font-weight: bold;
+    font-size:18px;
+    text-decoration: none;
+    margin-left:20px;
+    border-right: solid 0.5px slategrey;
+    border-spacing: 5px;
+    box-sizing: border-box;
+}
+nav a:hover{
+    color:gray;
+    
+}
+nav a i{
+    margin-right:10px;
+}
+.main{
+    padding:150px 300px;
+    justify-content: center;
+    position: relative;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    background: url('../Images/mobiles.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main .content{
+    width:600px;
+}
+.main .content h1{
+    color:cornsilk;
+    font-size:38px;
+}
+.text{
+    position: relative;
+    justify-content: center;
+}
+.text p{
+    color:green;
+    font-weight: bold;
+    font-size:20px;
+    margin-top:20px;
+    letter-spacing: 1px;
+}
+.btn{
+    color:cornsilk;
+    display:inline-block;
+    margin:50px 20px;
+    padding:10px 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius:5px;
+    font-weight: bold;
+    font-size:18px;
+}
+#green{
+    background:lawngreen;
+    box-shadow: 0  4px 0 #518719;
+}
+#blue{
+    background:dodgerblue;
+    box-shadow: 0 4px 0 #046b9f;
+}
+
+/* styling of campain section  */
+.logo{
+    margin-top: 1%;
+    border-radius:5px;
+    padding:30px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    padding:18px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black; 
+    margin-left: 30px;
+    width:40%;
+}
+img{
+    width:100%;
+}
+.container{
+    display:inline-block;
+    width:100%;
+}
+.camp{
+    float: left;
+    width:25%;
+    margin-top:3%;
+}
+.para{
+    width:70%;
+    margin-top:3%;
+    margin-left: 5%;
+    display:inline-block;
+}
+
+/* styling of campain 2 section  */
+
+.wrraper {
+    width: 1270px;
+    margin: 0 auto;
+}
+        
+.wrraper:after,
+.rev:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rev {
+    border-top: 2px solid slategrey;
+    border-bottom: 2px solid slategrey;
+    padding: 31px 0 0 0;
+    margin-bottom: 15px;
+}
+.sec {
+    float: left;
+    width: 352px;
+    height: 150px;
+    margin-left: 90px;
+    
+}
+.sec:first-child {
+    margin-left: 0;
+}
+
+.img-rev {
+    float: left;
+    width: 98px;
+    text-align: center;
+}
+.quote {
+    float: right;
+    width: 234px;
+    padding-top: 4px;
+}
+.rev img {
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+}
+.rev a {
+    color: #626e7e;
+}
+.rev span {
+    font-size: 18px;
+    color: dimgrey;
+}
+.rev q {
+    margin: 8px 0 0;
+}
+ /* styling of feature section  */
+
+.featured {
+    padding: 26px 0;
+    margin-bottom: 34px;
+}
+.featured * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.featured ul li {
+    margin-right: 30px;
+}
+
+.featured .title {
+    margin-right: 20px;
+}
+.brand{
+    height: 70px;
+    width: 190px;
+}
+.art-img{
+    height: 90px;
+    width: 90px;
+}
+
+/* styling of footer section  */
+
+footer {
+    height: 300px;
+    background-color: black;
+}
+
+.footer-content{
+    height: 230px;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    align-items: center;
+}
+
+.column {
+    color: white;
+    float: left;
+    line-height: 35px;
+    width: 15%;
+    height: 200px;
+    margin: 10px;
+}
+
+li{
+    color: gray;
+    line-height: 35px;
+    font-size: 20px;
+}
+.social-footer-icons i{
+    color: #ffffff;
+    font-size: 1.3rem;
+    float: right;
+    margin-top: 20px;
+    margin-right: 12px;
+   }
+/* Media queries */
+@media only screen and (max-width: 600px) {
+
+    .logo{
+      flex-direction: column;
+    }
+    .image {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+  }
